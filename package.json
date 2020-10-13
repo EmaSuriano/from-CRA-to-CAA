@@ -1,0 +1,25 @@
+{
+  "name": "from-cra-to-caa",
+  "description": "Talk given at Byteconf React 2020",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmaSuriano/from-CRA-to-CAA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmaSuriano/from-CRA-to-CAA/issues"
+  },
+  "homepage": "https://github.com/EmaSuriano/from-CRA-to-CAA#readme",
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "mdx-deck": "^4.1.1"
+  },
+  "devDependencies": {}
+}

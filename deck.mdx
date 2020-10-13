@@ -1,0 +1,789 @@
+import {
+  TopWrapper,
+  Flex,
+  CustomizableImage,
+  Vertical,
+  Logo,
+} from './components';
+import Themes from './themes';
+
+<Head>
+  <meta charset="utf-8" />
+  <title>From create-react-app to create-any-app</title>
+</Head>
+
+<Header>
+<TopWrapper>
+<Flex justifyContent="flex-end">
+
+
+### [ByteConf React 2020](https://www.bytesized.xyz/react-2020)
+
+</Flex>
+</TopWrapper>
+</Header>
+
+
+<Footer>
+<TopWrapper>
+<Flex justifyContent="flex-end">
+
+
+### [@emasuriano](http://emasuriano.com/)
+
+</Flex>
+</TopWrapper>
+</Footer>
+
+
+export const theme = Themes.omio;
+
+<Split>
+
+
+<img
+  src={require('./assets/cover.jpg')}
+  alt="Photo by Brendan Church on Unsplash"
+/>
+
+## from _create-react-app_
+
+## to _create-any-app_
+
+</Split>
+
+
+---
+
+<Horizontal>
+
+
+<Vertical>
+
+
+## Hello there, I'm Ema Suriano 👋
+
+- 👨‍💻 Web Developer
+- ☮️ Open Source Enthusiast
+- ✍️ Writer
+- 👨‍🍳 Foodie/Cook
+- 🌎 Traveler
+
+</Vertical>
+
+
+<CustomizableImage src={require('./assets/profile.jpeg')} alt="profile" round />
+
+</Horizontal>
+
+
+---
+
+<Notes>
+
+
+Omio is a global multi-mode search engine for all major forms of transport. We
+compare and combine air, bus, rail and ferry journeys for routes both big and
+small.
+
+Tell the story!!
+
+Around two years ago when I joined the company, we were facing some architectural but let's see how do we work.
+
+</Notes>
+
+
+<CustomizableImage
+  src={require('./assets/omio-logo.png')}
+  alt="Omio Logo"
+  maxWidth="600px"
+/>
+
+---
+
+<Notes>
+
+
+The teams are structured depending on business needs. A business
+
+</Notes>
+
+
+## How do we work?
+
+<Steps>
+
+
+- ✅ Teams are structured by business needs
+- ✅ Micro Frontend
+- ✅ Autonomous teams
+
+</Steps>
+
+
+---
+
+<Notes>
+
+
+</Notes>
+
+
+### But this also comes with some issues ...
+
+<Steps>
+
+
+- ❌ Integrating all the projects together is quite problematic.
+- ❌ Repetitive code and configuration.
+- ❌ There is no way to spread a company-wide stack.
+- ❌ Every team had to deal with the bootstrap by themself.
+
+</Steps>
+
+
+---
+
+<Split>
+
+
+<img src={require('./assets/get-some-help.gif')} alt="Get some help" />
+
+## Someone had to do something ...
+
+<Appear>
+
+
+And that's how my team was born: **UI Platform** 🎉
+
+</Appear>
+
+
+</Split>
+
+
+---
+
+<Invert>
+
+
+# Our goal
+
+> Empower teams to build their Micro Frontends in a unified and efficient way.
+
+</Invert>
+
+
+---
+
+<Notes>
+
+
+When we think about a framework or tool that can help us bootstrap a project in React, most of the people will think of `create-react-app`, and it was our first try!
+
+- easy to bootstrap new projects
+- easy to share across the company, one npm dependency
+- it keeps all the technologies and configuration in one place
+  - webpack
+  - eslint
+  - babel
+  - react
+- provide a set of scripts that clients can run:
+  - start (also lint your project)
+  - build
+
+</Notes>
+
+
+<SplitRight>
+
+
+<img src={require('./assets/why-not.gif')} alt="Why not?" />
+
+## `create-react-app` 🤔
+
+<Steps>
+
+
+- ✅ Quickly bootstrap new projects.
+- ✅ Easily share across the company.
+- ✅ Keeps all the technologies and configuration centralized.
+- ✅ It provides a set of scripts that clients can run.
+
+</Steps>
+
+
+</SplitRight>
+
+
+---
+
+<Notes>
+
+
+CRA it's a great library that can help to move faster in projects that match exactly the stack. Which wasn't our case ...
+
+- We were using different technologies to develop Micro frontend
+- The only "usable" script was the build ...
+
+</Notes>
+
+
+## But it was similar to this ...
+
+<CustomizableImage
+  src={require('./assets/not-fitting.gif')}
+  alt="Why not?"
+  width="700px"
+  maxWidth="700px"
+/>
+
+---
+
+<Invert>
+
+
+### The whole process wasn't a waste of time
+
+<Appear>
+
+
+## Now we knew exactly what we wanted 👏
+
+</Appear>
+
+
+</Invert>
+
+
+---
+
+<Notes>
+
+
+We grab the general idea and we decided to create our create-react-app, keeping the same principles. We knew that we wanted to have:
+
+</Notes>
+
+
+## Framework principles
+
+<Steps>
+
+
+- 1️⃣ One Dependency
+- 🏎 A fast way to bootstrap your project
+- 🏠 One place for all the technologies and configurations.
+- 📝 Scripts to cover the needs of the teams.
+
+</Steps>
+
+
+---
+
+<Notes>
+
+
+As the initiative was at the beginning to address the problems with Micro Frontend, we decided to call it `frontend-scripts`, AKA `fes`.
+
+</Notes>
+
+
+<Invert>
+
+
+# We called it
+
+<Appear>
+
+
+# ✨ `fe-scripts` ✨
+
+</Appear>
+
+
+</Invert>
+
+
+---
+
+## One Dependency
+
+**`yarn add @goeuro/frontend-scripts`**
+
+---
+
+## A fast way to bootstrap your project
+
+`npx @goeuro/frontend-scripts init`
+
+---
+
+<Notes>
+
+
+Our stack is basically
+
+We kept all these technologies inside the `fes` dependencies and `modules` dependencies.
+
+</Notes>
+
+
+## One place for all the configurations
+
+<Flex>
+
+
+<Logo name="React" />
+<Logo name="React Native" />
+<Logo name="Typescript" />
+<Logo name="Styled Components" />
+<Logo name="Jest" />
+
+</Flex>
+
+
+<Flex>
+
+
+<Logo name="Cypress" />
+<Logo name="Storybook" />
+<Logo name="Eslint" />
+<Logo name="React Intl" />
+<Logo name="Semantic Release" />
+
+</Flex>
+
+
+---
+
+## Scripts to cover the needs of the teams
+
+- 👶 Creation
+- 🛠 Development
+- 🧪 Testing
+- ⚙️ Environment Setup
+- 📦 Deployment
+
+---
+
+### Creation
+
+<Steps>
+
+
+- **init**: bootstrap a new project.
+
+</Steps>
+
+
+---
+
+### Development
+
+<Steps>
+
+
+- **storybook-web**: configuration of **Storybook Web** with start and build scripts.
+- **storybook-rn**: configuration of **Storybook React Native** with start script.
+- **integration-rn**: integrate the project with the **React Native** application to run it locally.
+- **lint**: run **ESlint** with the company configuration.
+- **update-translations**: fetch the latest translations for your project being used with **React Intl**.
+
+</Steps>
+
+
+---
+
+### Testing
+
+<Steps>
+
+
+- **test**: load **Jest** and run integration or unit test for **Web** and **React Native**.
+- **e2e-web**: configuration of **Cypress** and run all the End-to-End tests file for **Web**.
+- **visual-testing**: run Static Visual Testing from all the **Storybook** stories in **Web**.
+
+</Steps>
+
+
+---
+
+### Environment Setup
+
+<Steps>
+
+
+- **run-android**: download the **Android** application, and start the emulator.
+- **run-ios**: download the **iOS** application, and start the emulator.
+
+</Steps>
+
+
+---
+
+### Deployment
+
+<Steps>
+
+
+- **build**: transpile your project using **Typescript**.
+- **deploy-ci**: deploy your project using **semantic-release**.
+
+</Steps>
+
+
+---
+
+<Notes>
+
+
+- bootstrap new project with init command
+- run help command
+- run start storybook web
+- run start storybook rn and show it inside the playground (that will be already opened)
+- run test
+- run e2e-test
+- run build command
+
+</Notes>
+
+
+# Demo time 🎥
+
+<CustomizableImage
+  src={require('./assets/get-started.gif')}
+  alt="Get Started"
+  width="500px"
+/>
+
+---
+
+<Invert>
+
+
+## How does it work? 🤔
+
+</Invert>
+
+
+---
+
+## 4 pillars
+
+- #### Templates
+- #### Commands
+- #### Modules
+- #### Core
+
+---
+
+<SplitRight>
+
+
+```tree
+📦templates
+┣ 📂react
+┃ ┣ 📂src
+┃ ┃ ┣ 📂components
+┃ ┃ ┗ 📂views
+┃ ┣ 📜.npmignore
+┃ ┣ 📜.gitignore
+┃ ┣ 📜package.json
+┃ ┗ 📜yarn.lock
+┣ 📂react-redux
+┗ 📂react-apollo
+```
+
+## Templates
+
+- Project codebase to bootstrap.
+- You can have as many as you want.
+- Relies on **commands** and **modules**.
+- Provide all the basic dependencies.
+
+</SplitRight>
+
+
+---
+
+<SplitRight>
+
+
+```tree
+📦commands
+ ┣ 📜clean.ts
+ ┣ 📜help.ts
+ ┣ 📜update-translations.ts
+ ┗ 📜init.ts
+```
+
+## Commands
+
+- Simple scripts to be executed on the client
+- They shouldn't require any additional dependency to run.
+- They have a beginning and an end.
+
+</SplitRight>
+
+
+---
+
+<Split>
+
+
+```javascript
+// commands/logger.js
+const run = (...args) => {
+  console.log('Logging arguments!', args);
+};
+
+module.exports = {
+  run,
+};
+```
+
+<Steps>
+
+
+## Calling the command
+
+<div>
+
+
+```bash
+> yarn fe-scripts logger
+# Logging arguments
+```
+
+</div>
+
+
+<div>
+
+
+```bash
+> yarn fe-scripts logger 1 2
+# Logging arguments 1 2
+```
+
+</div>
+
+
+</Steps>
+
+
+</Split>
+
+
+---
+
+<Notes>
+
+
+When the clients bootstrap their projects they are not going to install all the dependencies at once.
+
+They only install the dependencies needed to use the project locally and make it work with your IDE.
+
+The rest of the dependencies will come inside the modules.
+
+Therefore when the client wants to execute e2e test, it will get the e2e module, after it will install the needed dependencies and at last it will run the tests.
+
+</Notes>
+
+
+<SplitRight>
+
+
+```tree
+📦modules
+ ┣ 📂build
+ ┣ 📂e2e
+ ┗ 📂storybook
+   ┣ 📂.storybook
+   ┃ ┗ 📜main.js
+   ┣ 📜.npmignore
+   ┣ 📜package.json
+   ┗ 📜yarn.lock
+```
+
+## Modules
+
+- Self-contained set of **commands**.
+- Have to be installed to be executed.
+- They can use external dependencies.
+- They can have a state.
+
+</SplitRight>
+
+
+---
+
+<Split>
+
+
+```json
+{
+  "name": "my-storybook-module",
+  "description": "My simple storybook module",
+  "scripts": {
+    "start": "start-storybook -p 6006",
+    "build": "build-storybook -o ../../static"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "react": "^3.20.1",
+    "react-loader": "^2.13.6"
+  }
+}
+```
+
+<Steps>
+
+
+## Calling the module
+
+<div>
+
+
+```bash
+> yarn fe-scripts my-storybook-module
+# Copying module into your project
+# Installing module dependencies
+# Run: start-storybook -p 6006
+```
+
+</div>
+
+
+<div>
+
+
+```bash
+> yarn fe-scripts my-storybook-module:build
+# Run: build-storybook -o ../../static
+```
+
+</div>
+
+
+</Steps>
+
+
+</Split>
+
+
+---
+
+<SplitRight>
+
+
+```tree
+📦fe-scripts
+ ┣ 📂commands
+ ┣ 📂modules
+ ┣ 📂core
+ ┗ 📂templates
+```
+
+## Core
+
+- Exposes a CLI to communicate with the tool.
+- Decoupled from the others pillars.
+- Knows how to execute **templates**, **commands** and **modules**.
+- UX for Developers.
+
+</SplitRight>
+
+
+---
+
+<Notes>
+
+
+So these four characteristics are present in any project of any kind:
+
+And that's why you can create **any** application with this framework!
+
+The only constraint you have is it has to be a node application. Luckily JS is now even on your TV.
+
+</Notes>
+
+
+<SplitRight>
+
+
+<Appear>
+
+
+<img src={require('./assets/mind-blow.gif')} alt="Mind blow" />
+
+</Appear>
+
+
+<Vertical>
+
+
+### This concept can be applied to any JS project
+
+- 🖥 Web
+- 📱 Mobile
+- 🎛 Backend
+- ⌚️ IoT
+
+</Vertical>
+
+
+</SplitRight>
+
+
+---
+
+## Next Steps 🙌
+
+<Steps>
+
+
+- Start using the framework in other areas than Frontend.
+- Open source the library under [OmioLabs](https://github.com/omio-labs) 🥳
+
+</Steps>
+
+
+---
+
+## What is it going to include? 🎁
+
+<Steps>
+
+
+- Decouple **core** and make it extensible.
+- Publish existing **modules**, **templates** and **commands**.
+- How to use it and development guidelines.
+
+</Steps>
+
+
+---
+
+<Invert>
+
+
+> This framework shines when you customize it for your needs ✨
+
+</Invert>
+
+
+---
+
+# Thanks for listening
+
+[talks.emasuriano.com/from-CRA-to-CAA](https://talks.emasuriano.com/from-CRA-to-CAA)
+
+---
+
+# Questions?
