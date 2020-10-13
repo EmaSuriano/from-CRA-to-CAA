@@ -4,8 +4,16 @@ import {
   CustomizableImage,
   Vertical,
   Logo,
-} from './components';
-import Themes from './themes';
+} from '../components';
+import Themes from '../themes';
+import cover from '../assets/cover.jpg';
+import profile from '../assets/profile.jpeg';
+import omioLogo from '../assets/omio-logo.png';
+import getHelp from '../assets/get-some-help.gif';
+import whyNot from '../assets/why-not.gif';
+import getStarted from '../assets/get-started.gif';
+import notFitting from '../assets/not-fitting.gif';
+import mindBlow from '../assets/mind-blow.gif';
 
 <Head>
   <meta charset="utf-8" />
@@ -41,10 +49,7 @@ export const theme = Themes.omio;
 <Split>
 
 
-<img
-  src={require('./assets/cover.jpg')}
-  alt="Photo by Brendan Church on Unsplash"
-/>
+<img src={cover} alt="Photo by Brendan Church on Unsplash" />
 
 ## from _create-react-app_
 
@@ -72,7 +77,7 @@ export const theme = Themes.omio;
 </Vertical>
 
 
-<CustomizableImage src={require('./assets/profile.jpeg')} alt="profile" round />
+<CustomizableImage src={profile} alt="profile" round />
 
 </Horizontal>
 
@@ -93,11 +98,7 @@ Around two years ago when I joined the company, we were facing some architectura
 </Notes>
 
 
-<CustomizableImage
-  src={require('./assets/omio-logo.png')}
-  alt="Omio Logo"
-  maxWidth="600px"
-/>
+<CustomizableImage src={omioLogo} alt="Omio Logo" maxWidth="600px" />
 
 ---
 
@@ -147,7 +148,7 @@ The teams are structured depending on business needs. A business
 <Split>
 
 
-<img src={require('./assets/get-some-help.gif')} alt="Get some help" />
+<img src={getHelp} alt="Get some help" />
 
 ## Someone had to do something ...
 
@@ -198,7 +199,7 @@ When we think about a framework or tool that can help us bootstrap a project in 
 <SplitRight>
 
 
-<img src={require('./assets/why-not.gif')} alt="Why not?" />
+<img src={whyNot} alt="Why not?" />
 
 ## `create-react-app` 🤔
 
@@ -232,7 +233,7 @@ CRA it's a great library that can help to move faster in projects that match exa
 ## But it was similar to this ...
 
 <CustomizableImage
-  src={require('./assets/not-fitting.gif')}
+  src={notFitting}
   alt="Why not?"
   width="700px"
   maxWidth="700px"
@@ -451,11 +452,7 @@ We kept all these technologies inside the `fes` dependencies and `modules` depen
 
 # Demo time 🎥
 
-<CustomizableImage
-  src={require('./assets/get-started.gif')}
-  alt="Get Started"
-  width="500px"
-/>
+<CustomizableImage src={getStarted} alt="Get Started" width="500px" />
 
 ---
 
@@ -720,7 +717,7 @@ The only constraint you have is it has to be a node application. Luckily JS is n
 <Appear>
 
 
-<img src={require('./assets/mind-blow.gif')} alt="Mind blow" />
+<img src={mindBlow} alt="Mind blow" />
 
 </Appear>
 
