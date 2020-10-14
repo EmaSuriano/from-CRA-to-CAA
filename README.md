@@ -2,6 +2,8 @@
 
 Talk given at [Byteconf React 2020](https://www.bytesized.xyz/from-create-react-app-to-create-any-app/).
 
+## [Live Deck](https://xenodochial-banach-f076e3.netlify.app/)
+
 ## Summary
 
 Same company, lots of teams, different technologies, developers battling outdated dependencies and copying scripts and configuration files all over multiple projects? Does this sound familiar to you?
@@ -19,12 +21,12 @@ I’m really excited about our solution and in this talk I’ll cover the proces
 # start local development
 > yarn start
 
-
 # build for release
 > yarn build
-
-# deploy to gh-pages
-> yarn deploy
 ```
+
+## Deployment
+
+Automatic deployment with Netlify <3
 
 Feel free to use this repository as your example :)

@@ -4,10 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "mdx-deck slides/deck.mdx",
-    "build": "mdx-deck build slides/deck.mdx",
-    "predeploy": "yarn build",
-    "deploy": "npx gh-pages -d public"
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx"
   },
   "repository": {
     "type": "git",
