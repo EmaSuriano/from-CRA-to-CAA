@@ -2,7 +2,7 @@
 
 Talk given at [Byteconf React 2020](https://www.bytesized.xyz/from-create-react-app-to-create-any-app/).
 
-## [Live Deck](https://xenodochial-banach-f076e3.netlify.app/)
+## [Live Deck](https://from-cra-to-caa.netlify.app/)
 
 ## Summary
 
